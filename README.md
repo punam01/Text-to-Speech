@@ -1,2 +1,4 @@
 # Text-to-Speech
- Type in something and the web api will help you to convert the same to speech
+ Type and speak app with speech synthesis using the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
+ 
+ [demo](https://text-to-speech-webspeechapi.netlify.app/)
