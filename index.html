@@ -10,41 +10,45 @@
 
     <style>
         body {
-            background: #141414;
+            background: white;
+        }
+        h1{
+            color:#1a2c32;
+            padding: 20px;
+            font-family:'Times New Roman', Times, serif ;
         }
     </style>
 
     <title>Type-N-Speak</title>
 </head>
 
-<body class="text-white">
+<body class="p-2" >
     <div class="container text-center">
-
-        <div class="row">
+        <h1>Text-to-Speech</h1>
+        <img class="img-fluid" src="images/hero.svg" alt="">
+        <div class="row m-2">
             <div class="col-md-6 mx-auto">
                 <form class="mb-5">
                     <div class="form-group">
-                        <textarea name="" id="text-input" class="form-control form-control-lg"
+                        <textarea name="" id="text-input" class="form-control form-control-lg shadow-sm"
                             placeholder="Type anything..."></textarea>
                     </div>
                     <div class="form-group">
                         <label for="rate">Rate</label>
-                        <div id="rate-value" class="badge badge-primary float-right">1</div>
-                        <input type="range" id="rate" class="custom-range" min="0.5" max="2" value="1" step="0.1">
+                        <div id="rate-value" class="badge badge-primary float-right shadow-sm">1</div>
+                        <input type="range" id="rate" class="custom-range shadow-sm" min="0.5" max="2" value="1" step="0.1">
                     </div>
                     <div class="form-group">
                         <label for="pitch">Pitch</label>
-                        <div id="pitch-value" class="badge badge-primary float-right">1</div>
-                        <input type="range" id="pitch" class="custom-range" min="0" max="2" value="1" step="0.1">
+                        <div id="pitch-value" class="badge badge-primary float-right shadow-sm">1</div>
+                        <input type="range" id="pitch" class="custom-range shadow-sm" min="0" max="2" value="1" step="0.1">
                     </div>
                     <div class="form-group">
-                        <select id="voice-select" class="form-control form-control-lg"></select>
+                        <select id="voice-select" class="form-control form-control-lg shadow-sm"></select>
                     </div>
-                    <button class="btn btn-light btn-lg btn-block">Speak It</button>
+                    <button class="btn btn-light btn-lg btn-block border shadow p-3 mb-5">Speak It</button>
                 </form>
 
-                <p class="text-secondary"> Note: This app uses the Web Speech API which is experimental and may not
-                    fully work in some versions of certain browsers</p>
             </div>
         </div>
     </div>
